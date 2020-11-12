@@ -1,0 +1,23 @@
+<div class="main">
+  <div class="grid-container">
+    <div class="grid-toprow">
+      <span class="grid-item-toprow">{{num1}}</span>
+      <span class="grid-item-toprow">{{sym1}}</span>
+      <span class="grid-item-toprow">{{num2}}</span>
+      <span class="grid-item-toprow">{{sym2}}</span>
+      <span class="grid-item-toprow">{{num3}}</span>
+      <span class="grid-item-toprow">=</span>
+      <span class="grid-item-toprow">{{ans}}</span>
+    </div>
+    <button id="1" class="grid-item" (click)="pressKey(1)">1</button>
+    <button id="2" class="grid-item" (click)="pressKey(2)">2</button>
+    <button id="3" class="grid-item" (click)="pressKey(3)">3</button>  
+    <button id="4" class="grid-item" (click)="pressKey(4)">4</button>
+    <button id="5" class="grid-item" (click)="pressKey(5)">5</button>
+    <button id="6" class="grid-item" (click)="pressKey(6)">6</button>  
+    <button id="7" class="grid-item" (click)="pressKey(7)">7</button>
+    <button id="8" class="grid-item" (click)="pressKey(8)">8</button>
+    <button id="9" class="grid-item" (click)="pressKey(9)">9</button>
+    <button id="del" class="grid-item-del" (click)="pressKey('del')">Delete</button>  
+  </div>
+</div>
