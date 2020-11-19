@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Unblock Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <canvas></canvas>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src='./lib/levels.js'></script>
+    <script type="text/javascript" charset="utf-8" src='./lib/block.js'></script>
+    <script type="text/javascript" charset="utf-8" src='./lib/game.js'></script>
+    <script type="text/javascript" charset="utf-8" src='./lib/gameView.js'></script>
+
+    <script type="application/javascript">
+      (function () {
+        var canvasEl = document.getElementsByTagName("canvas")[0];
+        canvasEl.width = UnblockMe.Game.DIM_X + 20;
+        canvasEl.height = UnblockMe.Game.DIM_Y + 20;
+        canvasEl
+        var ctx = canvasEl.getContext("2d");
+        var game = new UnblockMe.Game();
+        new UnblockMe.GameView(game, canvasEl, ctx).start();
+      })();
+    </script>
+  </body>
+</html>
